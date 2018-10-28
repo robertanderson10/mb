@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="section-heading"><i class="fa fa-calculator"></i>&nbsp;Calculator</div>
+
+	<div class="row reward-info">
+		Calculate you reward points based on your monthly average credit card spend
+	</div>
+
+	<div class="row">
+		<div class="col-xs-3 col-sm-4 col-md-4 col-lg-3">
+			<label>Monthly average spend:</label>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-4">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">$</span>
+				</div>
+				<input id="ccSpend" type="number" ng-model="$ctrl.ccSpend"
+				 ng-change="$ctrl.ccSpendChange()" type="text" class="form-control"
+				 aria-label="Amount (to the nearest dollar)">
+				<div class="input-group-append">
+					<span class="input-group-text">.00</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-7 text-center">
+			<div id="memberWallet">
+				<ul class="row">
+					<li id="myRewards">
+						<span>{{$ctrl.totalPoints}}</span>
+						<label>Reward Points</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>

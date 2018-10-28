@@ -1,0 +1,31 @@
+// for loading font-awesome icons
+$fa-font-path: '~font-awesome/fonts/';
+
+@import '~font-awesome/scss/font-awesome';
+
+/*===========================================
+===== Loading Custom Setup of Variables =====
+=============================================*/
+@import 'vars/typography';
+@import 'vars/body';
+
+/*===========================================
+========= Loading Bootstrap Styles ==========
+=============================================*/
+@import '~bootstrap/scss/bootstrap';
+
+/*===========================================
+========= Loading Customize Styles ==========
+=============================================*/
+// loading blocks
+@import 'blocks/body';
+
+// loading elements
+@import 'elements/accordian-toggle';
+@import 'elements/button';
+
+// components
+@import './../components/header/header.scss';
+@import './../components/hero/hero.scss';
+@import './../components/home/home.scss';
+@import './../components/calculator/calculator.scss';

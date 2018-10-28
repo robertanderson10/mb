@@ -1,0 +1,36 @@
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/selector.jpg");
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 1.75em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    p{
+        font-size: 1.3rem;
+        padding-top: 20px;
+    }
+}
+
+body{background-color:#fff;}
+
+@media only screen and (max-width: 768px) {
+    .hero-text {
+        text-align: center;
+        left: 50%;
+    }
+}
